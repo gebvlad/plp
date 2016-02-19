@@ -10,6 +10,8 @@ $ php runner.php
 
 $ perl -e 'print "runner.php\n" x N' | xargs -P N -I {} php -f {}
 
+N - number of threads
+
 ## Run tests
 
 $ phpunit --bootstrap tests/bootstrap.php tests/
