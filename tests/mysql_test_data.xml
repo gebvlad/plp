@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="plp_base_test">
+	<table_structure name="task">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="account_id" Type="int(10) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="created" Type="datetime" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="deffer" Type="datetime" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="type" Type="tinyint(2)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="task" Type="varchar(45)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="action" Type="varchar(45)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="data" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="status" Type="tinyint(2)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="retries" Type="tinyint(2)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="finished" Type="datetime" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="result" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="task" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="2221" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="task" Non_unique="1" Key_name="status" Seq_in_index="1" Column_name="status" Collation="A" Cardinality="3" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="task" Non_unique="1" Key_name="deffer" Seq_in_index="1" Column_name="deffer" Collation="A" Cardinality="1" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="task" Engine="InnoDB" Version="10" Row_format="Compact" Rows="2333" Avg_row_length="224" Data_length="524288" Max_data_length="0" Index_length="98304" Data_free="0" Auto_increment="2973508" Create_time="2016-02-16 18:48:11" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+    <table_data name="task">
+        <row>
+            <field name="id">2971107</field>
+            <field name="account_id">83992</field>
+            <field name="created">2016-02-14 13:01:03</field>
+            <field name="deffer" xsi:nil="true" />
+            <field name="type" xsi:nil="true" />
+            <field name="task">domain</field>
+            <field name="action">addzone</field>
+            <field name="data">{&quot;domain&quot;:&quot;mydomain.ru&quot;}</field>
+            <field name="status">0</field>
+            <field name="retries">0</field>
+            <field name="finished" xsi:nil="true" />
+            <field name="result" xsi:nil="true" />
+        </row>
+        <row>
+            <field name="id">2971122</field>
+            <field name="account_id">9608</field>
+            <field name="created">2016-02-14 13:01:53</field>
+            <field name="deffer" xsi:nil="true" />
+            <field name="type" xsi:nil="true" />
+            <field name="task">integration</field>
+            <field name="action">process</field>
+            <field name="data">{&quot;integration_id&quot;:2987,&quot;lead_id&quot;:&quot;2999570&quot;}</field>
+            <field name="status">0</field>
+            <field name="retries">0</field>
+            <field name="finished">2016-02-18 20:29:01</field>
+            <field name="result">{&quot;result&quot;:&quot;215be8b9077c5f532f7543c4015b9038&quot;}</field>
+        </row>
+        <row>
+            <field name="id">2971123</field>
+            <field name="account_id">9608</field>
+            <field name="created">2016-02-14 13:01:58</field>
+            <field name="deffer" xsi:nil="true" />
+            <field name="type" xsi:nil="true" />
+            <field name="task">integration</field>
+            <field name="action">process</field>
+            <field name="data">{&quot;integration_id&quot;:2845,&quot;lead_id&quot;:&quot;2999571&quot;}</field>
+            <field name="status">0</field>
+            <field name="retries">0</field>
+            <field name="finished">2016-02-18 20:29:00</field>
+            <field name="result">{&quot;result&quot;:&quot;f1719533af760b663b776811b67dd43f&quot;}</field>
+        </row>
+    </table_data>
+</database>
+</mysqldump>
