@@ -1,6 +1,5 @@
 # plp
-Test task
-
+Simple task queur for run / Простая очередь задач на выполнение
 
 ## Run application
 
