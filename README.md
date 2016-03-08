@@ -1,5 +1,5 @@
 # plp
-Simple task queur for run / Простая очередь задач на выполнение
+Simple task queue for run / Простая очередь задач на выполнение
 
 ## Run application
 
